@@ -3,12 +3,9 @@
 <ul>
     <% @articles.each do |article|%>
     <li>
-    <%# link to renders a link (label,dest) %>
-    <%= link_to article.title, article %>
+        <%# link to renders a link (label,dest) %>
+        <%= link_to article.title, article %>
     </li>
     <% end %>
 </ul>
-
-<p> 
-    <%= @test_val %>
-</p>
+<%= link_to "new", new_article_path %>
